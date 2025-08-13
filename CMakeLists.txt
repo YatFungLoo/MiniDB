@@ -14,16 +14,16 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEX2" CACHE STRING "Set C++ Compiler F
 
 ### Project statement ###
 project(
-  Example
+  MiniDB
   VERSION 1.0
   # LANGUAGE CXX
-  # DESCRIPTION "Example C++"
+  # DESCRIPTION "MiniDB"
 )
 
 ### Source path ###
 set(SOURCES
   src/main.cpp
-  src/header.cpp
+  src/MiniDB.cpp
 )
 
 ### Executable statement ###
@@ -50,15 +50,15 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-  Default_test
-  src/header.cpp
+  DB_test
+  src/MiniDB.cpp
 )
 target_link_libraries(
-  Default_test
+  DB_test
   GTest::gtest_main
 )
-target_include_directories(Default_test PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(DB_test PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
 include(GoogleTest)
-gtest_discover_tests(Default_test)
+gtest_discover_tests(DB_test)
 

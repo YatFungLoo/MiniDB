@@ -1,7 +1,7 @@
-#include "header.hpp"
+#include "MiniDB.hpp"
 #include <cassert>
 
 int main() {
-    Example myExample;
+    MiniDB myExample;
     myExample.Print();
 }

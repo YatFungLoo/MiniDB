@@ -1,5 +1,6 @@
-# C-Cpp-cmake-with-ninja-and-gtest-template
-Simple C/C++ cmake with ninja project template to reuse for new project
+# MiniDB
+
+DIY debugger
 
 ## To run the code
 
