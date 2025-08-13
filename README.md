@@ -2,6 +2,8 @@
 
 DIY debugger
 
+[![CMake on multiple platforms](https://github.com/YatFungLoo/MiniDB/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/YatFungLoo/MiniDB/actions/workflows/cmake-multi-platform.yml)
+
 ## To run the code
 
 ```bash
